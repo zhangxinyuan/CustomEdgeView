@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomEdgeView">
+        <!-- 圆半径-->
+        <attr name="radius" format="dimension"/>
+
+        <!-- 圆圈之间的间距-->
+        <attr name="gap" format="dimension"/>
+    </declare-styleable>
+</resources>

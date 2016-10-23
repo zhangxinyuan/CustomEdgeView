@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.xinyuan.customedgeview.MainActivity">
+
+    <com.xinyuan.customedgeview.View.CustomEdgeView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FBB039"
+        android:padding="10dp"
+        app:radius="3dp"
+        app:gap="6dp">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/iv"
+            android:text="电影新客代金劵"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_below="@id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/iv"
+            android:text="编号:525451122312431"
+            android:layout_marginLeft="5dp"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_below="@id/id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="满200元可用、限最新版本客户端使用"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/iv"
+            android:layout_marginLeft="5dp"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_below="@id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="截止日期:2016-11-07"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/iv"
+            android:textSize="12dp" />
+
+    </com.xinyuan.customedgeview.View.CustomEdgeView>
+</RelativeLayout>
